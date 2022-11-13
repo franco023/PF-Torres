@@ -1,0 +1,92 @@
+/*estilos generales*/
+
+*{
+    margin:5px;
+}
+
+.letraFondo{
+    color: white;
+    background-color: black;
+    font-family: 'Kaushan Script', cursive;
+font-family: 'Press Start 2P', cursive;
+}
+
+.textDecoration{
+    text-decoration: none;
+}
+
+.listStyle{
+    list-style: none;
+}
+ 
+
+header nav ul {
+    list-style: none;
+    justify-content:left;
+}
+
+.menu{
+    text-align: right;
+}
+
+footer{
+padding-top: 70px;
+}
+
+/*--INDEX--*/
+
+
+#logo{
+    width:150px ;
+    height:150px;
+}
+
+
+.indexMain{
+padding: 10px;
+}
+
+#h2uno{
+text-decoration: underline;
+text-align: center;
+padding: 10px;
+}
+
+.contenidoCentral{
+    text-align: center;
+    color: green;
+    background-color:black;
+    background-image: url(../img/fodo-dissidia.jpg);
+    background-repeat: no-repeat;
+    background-size:cover
+}
+
+/*--TIENDA--*/
+
+.productosSpace{
+    padding-right: 40px;
+}
+
+/*--EVENTOS--*/
+
+#mk-b{
+text-align: center;
+}
+/*--COMUNIDAD--*/
+.topCom{
+    padding-top:30px;
+}
+
+#eventP{
+   text-align: center; 
+}
+
+/*ATENCION AL CLIENTE*/
+
+#whatsapp{
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    position: relative;
+    left: 1000px;
+}
