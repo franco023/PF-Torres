@@ -4,11 +4,23 @@
     margin:5px;
 }
 
+
+header{
+display:flex;
+justify-content:space-between;
+}
+
 .letraFondo{
     color: white;
     background-color: black;
     font-family: 'Kaushan Script', cursive;
-font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+
+h1{
+    justify-content: start;
 }
 
 .textDecoration{
@@ -22,7 +34,7 @@ font-family: 'Press Start 2P', cursive;
 
 header nav ul {
     list-style: none;
-    justify-content:left;
+    display: flex;
 }
 
 .menu{
