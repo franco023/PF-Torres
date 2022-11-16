@@ -1,16 +1,16 @@
 /*estilos generales*/
 
-*{
-    margin:5px;
+* {
+    margin: 5px;
 }
 
 
-header{
-display:flex;
-justify-content:space-between;
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
-.letraFondo{
+.letraFondo {
     color: white;
     background-color: black;
     font-family: 'Kaushan Script', cursive;
@@ -19,97 +19,158 @@ justify-content:space-between;
 
 
 
-h1{
+h1 {
     justify-content: start;
 }
 
-.textDecoration{
+.textDecoration {
     text-decoration: none;
 }
 
-.listStyle{
+.listStyle {
     list-style: none;
 }
- 
+
 
 header nav ul {
     list-style: none;
     display: flex;
 }
 
-.menu{
+.menu {
     text-align: right;
 }
 
-footer{
-padding-top: 70px;
-display: grid;
-grid-template-columns: auto;
-grid-template-rows: auto;
+footer {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
 }
 
 /*--INDEX--*/
 
 
-#logo{
-    width:150px ;
-    height:150px;
+#logo {
+    width: 150px;
+    height: 150px;
 }
 
 
-.indexMain{
-padding: 10px;
+.indexMain {
+    padding: 10px;
 }
 
-#h2uno{
-text-decoration: underline;
-text-align: center;
-padding: 10px;
+#h2uno {
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px;
 }
 
-.contenidoCentral{
+.contenidoCentral {
     text-align: center;
     color: #005700;
-    background-color:black;
+    background-color: black;
     background-image: url(../img/fodo-dissidia.jpg);
     background-repeat: no-repeat;
-    background-size:cover
+    background-size: cover
 }
 
 /*--TIENDA--*/
 
-.productosSpace{
+.productosSpace {
     padding-right: 40px;
 }
 
 
-.tiendaMain{
+.tiendaMain {
     display: flex;
     justify-content: space-around;
 }
 
 /*--EVENTOS--*/
 
-#mk-b{
-text-align: center;
+#mk-b {
+    text-align: center;
 }
 
 
 /*--COMUNIDAD--*/
-.topCom{
-    padding-top:30px;
+.topCom {
+    padding-top: 30px;
 }
 
-#eventP{
-   text-align: center; 
+#eventP {
+    text-align: center;
+}
+
+.mobileLogo{
+    display:none;
 }
 
 /*ATENCION AL CLIENTE*/
 
-#whatsapp{
+
+#whatsapp {
     height: 60px;
     width: 60px;
     padding: 10px;
     position: relative;
     left: 1000px;
 }
+
+/*media quarie general*/
+@media screen and (max-width:700px) {
+    header nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+}
+
+/*media quarie home*/
+@media screen and (max-width:700px) {
+    .contenidoCentral {
+        background-image: none;
+    }
+
+
+    #h2uno {
+        display: none;
+    }
+
+
+    .indexMain {
+        text-decoration: underline;
+    }
+}
+
+/*media quarie A.al cliente*/
+@media screen and (max-width:700px) {
+    #whatsapp {
+        position:sticky;
+        
+    }
+}
+
+/*media quarie comunidad*/
+@media screen and (max-width:700px) {
+    .desktopLogo{
+        display:none;
+}
+
+.mobileLogo{
+display: block;
+}
+
+}
+
+
