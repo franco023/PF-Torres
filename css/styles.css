@@ -1,176 +1,113 @@
 /*estilos generales*/
-
 * {
-    margin: 5px;
-}
+  margin: 5px;
+  box-sizing: border-box; }
 
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Press Start 2P', cursive; }
 
 header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.letraFondo {
-    color: white;
-    background-color: black;
-    font-family: 'Kaushan Script', cursive;
-    font-family: 'Press Start 2P', cursive;
-}
-
-
-
-h1 {
-    justify-content: start;
-}
-
-.textDecoration {
-    text-decoration: none;
-}
-
-.listStyle {
+  display: flex;
+  justify-content: space-between; }
+  header h1 {
+    justify-content: start; }
+  header #logo {
+    width: 150px;
+    height: 150px; }
+  header .menu {
+    text-align: right; }
+  header nav ul {
     list-style: none;
-}
-
-
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-.menu {
-    text-align: right;
-}
+    display: flex; }
+    header nav ul .textDecoration {
+      text-decoration: none; }
+    header nav ul .listStyle {
+      list-style: none; }
 
 footer {
-    padding-top: 70px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-content: center;
-}
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center; }
 
 /*--INDEX--*/
+main #h2uno {
+  text-decoration: underline;
+  text-align: center;
+  padding: 10px; }
 
+main .contenidoCentral {
+  text-align: center;
+  color: #005700;
+  background-image: url(../img/fodo-dissidia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-#logo {
-    width: 150px;
-    height: 150px;
-}
-
-
-.indexMain {
-    padding: 10px;
-}
-
-#h2uno {
-    text-decoration: underline;
-    text-align: center;
-    padding: 10px;
-}
-
-.contenidoCentral {
-    text-align: center;
-    color: #005700;
-    background-color: black;
-    background-image: url(../img/fodo-dissidia.jpg);
-    background-repeat: no-repeat;
-    background-size: cover
-}
+main .indexMain {
+  padding: 10px; }
 
 /*--TIENDA--*/
+main .productosSpace {
+  padding-right: 40px; }
 
-.productosSpace {
-    padding-right: 40px;
-}
-
-
-.tiendaMain {
-    display: flex;
-    justify-content: space-around;
-}
+main .tiendaMain {
+  display: flex;
+  justify-content: space-around; }
 
 /*--EVENTOS--*/
-
-#mk-b {
-    text-align: center;
-}
-
+main #mk-b {
+  text-align: center; }
 
 /*--COMUNIDAD--*/
-.topCom {
-    padding-top: 30px;
-}
+main div .topCom {
+  padding-top: 30px; }
 
-#eventP {
-    text-align: center;
-}
+main div #eventP {
+  text-align: center; }
 
-.mobileLogo{
-    display:none;
-}
+main div .mobileLogo {
+  display: none; }
 
 /*ATENCION AL CLIENTE*/
-
-
-#whatsapp {
-    height: 60px;
-    width: 60px;
-    padding: 10px;
-    position: relative;
-    left: 1000px;
-}
+main #whatsapp {
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  position: relative;
+  left: 1000px; }
 
 /*media quarie general*/
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
     header nav ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-}
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap; } }
 
 /*media quarie home*/
-@media screen and (max-width:700px) {
-    .contenidoCentral {
-        background-image: none;
-    }
-
-
-    #h2uno {
-        display: none;
-    }
-
-
-    .indexMain {
-        text-decoration: underline;
-    }
-}
+@media screen and (max-width: 700px) {
+  .contenidoCentral {
+    background-image: none; }
+  #h2uno {
+    display: none; }
+  .indexMain {
+    text-decoration: underline; } }
 
 /*media quarie A.al cliente*/
-@media screen and (max-width:700px) {
-    #whatsapp {
-        position:sticky;
-        
-    }
-}
+@media screen and (max-width: 700px) {
+  #whatsapp {
+    position: sticky; } }
 
 /*media quarie comunidad*/
-@media screen and (max-width:700px) {
-    .desktopLogo{
-        display:none;
-}
-
-.mobileLogo{
-display: block;
-}
-
-}
-
-
+@media screen and (max-width: 700px) {
+  .mobileLogo {
+    display: block; }
+  .desktopLogo {
+    display: none; } }

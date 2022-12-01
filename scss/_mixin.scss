@@ -1,0 +1,15 @@
+@mixin position {
+    text-align: center;
+}
+
+@mixin grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+@mixin fondoHome{
+    background-image: url(../img/fodo-dissidia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}

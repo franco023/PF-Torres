@@ -1,0 +1,180 @@
+@import "colores";
+@import "mixin";
+
+/*estilos generales*/
+
+* {
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: $fondo;
+    color: $letra;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Press Start 2P', cursive;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        justify-content: start;
+    }
+
+    #logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .menu {
+        text-align: right;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+
+        .textDecoration {
+            text-decoration: none;
+        }
+
+        .listStyle {
+            list-style: none;
+        }
+    }
+}
+
+footer {
+    padding-top: 70px;
+    @include grid;
+    justify-content: center;
+}
+
+/*--INDEX--*/
+
+main {
+    #h2uno {
+        text-decoration: underline;
+        @include position;
+        padding: 10px;
+    }
+
+    .contenidoCentral {
+        @include position;
+        color: $letraAtencion;
+       @include fondoHome
+    }
+
+    .indexMain {
+        padding: 10px;
+    }
+}
+
+/*--TIENDA--*/
+
+
+main {
+    .productosSpace {
+        padding-right: 40px;
+    }
+
+
+    .tiendaMain {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/*--EVENTOS--*/
+
+main {
+    #mk-b {
+        @include position;
+    }
+}
+
+
+/*--COMUNIDAD--*/
+
+main {
+    div {
+        .topCom {
+            padding-top: 30px;
+        }
+
+        #eventP {
+            @include position;
+        }
+
+        .mobileLogo {
+            display: none;
+        }
+    }
+}
+
+/*ATENCION AL CLIENTE*/
+
+main {
+    #whatsapp {
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+        position: relative;
+        left: 1000px;
+    }
+}
+
+/*media quarie general*/
+
+@media screen and (max-width:700px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+/*media quarie home*/
+@media screen and (max-width:700px) {
+    .contenidoCentral {
+        background-image: none;
+    }
+
+
+    #h2uno {
+        display: none;
+    }
+
+
+    .indexMain {
+        text-decoration: underline;
+    }
+}
+
+/*media quarie A.al cliente*/
+@media screen and (max-width:700px) {
+    #whatsapp {
+        position: sticky;
+    }
+}
+
+/*media quarie comunidad*/
+@media screen and (max-width:700px) {
+        .mobileLogo {
+            display: block;
+        }
+
+        .desktopLogo {
+            display: none;
+        }
+}
